@@ -1,7 +1,7 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Student {
+public class Student1 {
 	public void method1() throws InterruptedException 
 	{
 		this.method2(); //It will call method 2
@@ -28,7 +28,7 @@ public class Student {
 	
 		public static void main(String[] args) throws InterruptedException
 		{
-			Student S1 = new Student();
+			Student1 S1 = new Student1();
 			S1.method1();
 		}
 }

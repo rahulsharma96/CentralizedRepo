@@ -1,9 +1,12 @@
+import java.util.Scanner;
 
 public class Palindrome {
 
 	public static void main(String args[]){  
-		  int r,sum=0,temp;    
-		  int n=114;//It is the number variable to be checked for palindrome  
+		  int r,n,sum=0,temp;    
+		  Scanner s = new Scanner(System.in);
+	        System.out.print("Enter any integer you want to check:");
+	        n = s.nextInt();  
 		  
 		  temp=n;    
 		  while(n>0){    
@@ -12,9 +15,9 @@ public class Palindrome {
 		   n=n/10;    
 		  }    
 		  if(temp==sum)    
-		   System.out.println("palindrome number ");    
+		   System.out.println("It is a palindrome number ");    
 		  else    
-		   System.out.println("not palindrome");    
+		   System.out.println("It is not a palindrome");    
 		}  
 	
 	

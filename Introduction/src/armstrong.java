@@ -1,10 +1,14 @@
+import java.util.Scanner;
 
 public class armstrong {
 
 	public static void main(String[] args)  {  
 	    int c=0,a,temp;  
-	    int n=153;//It is the number to check armstrong  
-	    temp=n;  
+	    int n;//It is the number to check armstrong  
+	    Scanner s = new Scanner(System.in);
+        System.out.print("Enter any integer you want to check:");
+        n = s.nextInt();
+	    temp=n; 
 	    while(n>0)  
 	    {  
 	    a=n%10;  
@@ -12,8 +16,8 @@ public class armstrong {
 	    c=c+(a*a*a);  
 	    }  
 	    if(temp==c)  
-	    System.out.println("armstrong number");   
+	    System.out.println(" It is an armstrong number ");   
 	    else  
-	        System.out.println("Not armstrong number");   
+	        System.out.println("It is not an armstrong number");   
 	   }  
 }
